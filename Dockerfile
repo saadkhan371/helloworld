@@ -11,6 +11,6 @@ VOLUME /tmp
  
 # Steps to run the spring boot application
 # Copy the application’s jar from target directory and name it
-ADD ./target/devtools-demo-0.0.1.jars myapp.jar
+ADD ./target/devtools-demo-0.0.1.jar myapp.jar
 RUN sh -c 'touch /myapp.jar'
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/myapp.jar"]
