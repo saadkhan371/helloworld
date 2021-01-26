@@ -39,7 +39,7 @@ CMD ["mvn"]
 
 
 # Installing java to our image
-RUN yum install -y java
+#RUN yum install -y java
 RUN git pull origin main
 RUN mvn package -DskipTests -X
 # Creating a temporary directory
