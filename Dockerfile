@@ -6,6 +6,9 @@ LABEL Saad Khan <saadkhan371@gmail.com>
 RUN yum install -y java
 # Creating a temporary directory
 VOLUME /tmp
+
+EXPOSE 8090
+
 # Steps to run the spring boot application
 # Copy the application’s jar from target directory and name it
 ADD ./target/devtools-demo-0.0.1.jar myapp.jar
