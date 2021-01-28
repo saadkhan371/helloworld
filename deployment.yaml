@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: 172.24.80.27:5000/hello-world:v1
+        image: hello-world@latest
         ports:
         - hostPort: 8090
           containerPort: 8090
