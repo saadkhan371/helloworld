@@ -30,10 +30,10 @@ ARG JAR_NAME="devtools-demo"
 # Steps to run the spring boot application
 # Copy the application’s jar from target directory and name it
 
-COPY target/devtools-demo*.jar /app.jar
+#COPY target/devtools-demo*.jar /app.jar
 
-
-##ADD ./app/target/{JAR_NAME}.jar myapp.jar
-CMD ["java","-jar", "./app.jar"]
+ADD ./target/devtools*.jar /app.jar
+#ADD ./app/target/{JAR_NAME}.jar myapp.jar
+CMD ["java","-jar", "/app.jar"]
 #RUN sh -c 'touch /myapp.jar'
 #ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/myapp.jar"]
